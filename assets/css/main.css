@@ -29,6 +29,11 @@ header {
     box-shadow: 1px 1px 1px rgba(0,0,0,0.5)
 }
 
+.logo{
+    padding-left: 0px;
+    margin-left: 0px;
+}
+
 ul {
     display: none;
 }
@@ -40,6 +45,7 @@ h1 {
     text-transform: uppercase;
     text-decoration: underline;
     padding-bottom: 19px;
+    margin-left: 155px;
 }
 
 header h1 {
@@ -109,7 +115,7 @@ h2 {
     width:210px;
     height:210px;
     border-radius: 25px;
-    border:3px solid rgba(0,0,0,.3);
+    border:3px solid rgba(0,0,0,.4);
     margin:15px;
     float: left;
 
@@ -186,7 +192,7 @@ article {
 }
 
 article h1, article h2 {
-    font-family: 'Alice', sans-serif;
+    
     font-size: 26px;
     font-weight: normal;
     padding: .3em 0;
@@ -202,7 +208,7 @@ p, section li {
     color: #8e8e8e;
     line-height: 19px;
     padding-bottom: 10px;
-    padding-left: 35px;
+    padding-left: 200px;
 }
 
 .flex-column {
