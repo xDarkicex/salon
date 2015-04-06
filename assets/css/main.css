@@ -67,12 +67,47 @@ header h1 {
 .left{
     padding-left: 34%;
 }
+.left-1{
+    font-size: 1.6em;
+    color:black;
+    text-transform: uppercase;
+    padding-left:25%;
+    max-width: 780px;
+}
+
+.policy p{
+    padding-bottom: 65px;
+}
+
+.privacy strong{
+    font-weight: bold;
+}
+
+.policy .left-1{
+    padding-top: 45px;
+}
 
 article p{
     padding-left: 10%;
     text-align: center;
     line-height: 40px;
     font-size: 1.5em;
+}
+.map{
+    margin-left: 22%;
+}
+.privacy ul{
+    display: block;
+    list-style:circle;
+    padding-left: 42%;
+    padding-bottom: 35px;
+}
+.privacy ul li{
+    padding-left: 0;
+
+}
+.privacy ul li strong{
+    font-weight: bold;
 }
 
 /*#5E7F58
@@ -124,9 +159,7 @@ figcaption {
 
 }
 
-h2, h3 {
-    color: #fff;
-}
+
 
 h2 {
      font-family: 'Open sans', sans-serif;
@@ -174,7 +207,7 @@ h2 {
 }
 
 h3 {
-    ffont-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 20px;
     line-height: 35px;
     max-width: 492px;
@@ -261,7 +294,7 @@ stylists
 }
 
 .bookstylist{
-    padding-left: 60%;
+    padding-left: 80%;
     padding-top: 0px;
 }
 
@@ -280,6 +313,10 @@ stylists
     color:black;
     text-transform: uppercase;
 }
+.samples{
+    padding-left: 15%;
+    max-width: 541px;
+}
 
 .shawnimg{
     width:150px;
@@ -297,7 +334,8 @@ stylists
     white-space: nowrap;
     background-color:black;
     display: inline-block;
-    padding: 0;
+    
+    margin-left: 195px;
 }
 
 .portfolioinner{
@@ -342,6 +380,12 @@ stylists
     background-color: #5E7F58;
 }
 
+.privacy .title{
+    color:black;
+    max-width: 950px;
+    padding-left: 115px;
+    padding-top:45px;
+}
 
 article h1, article h2 {
     
