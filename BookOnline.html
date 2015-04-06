@@ -51,102 +51,88 @@ highest standards to meet our customer's expectations.</h3>
          <a href="#book" class="book-appointment">BOOK AN APPOINTMENT</a>
     </figcaption>
 </figure>
-<section class="Bookonline">
-
-
-<div class="bookonline">
-  <h3 id="home_h3">Contact Us</h3><br />
-
-  <h3 class="title">To Make An Appointment Today Please Fill Out the Form Below.</h3>
-
-  <p>Thank you for visiting NEO DOLCE SALON ONLINE. Please fill in the contact form below With your Desired Stylist Date and Time and we will get back to you as soon as possible, to confirm your appointment. Please free to call us at <a href="tel:+1-800-289-7660">1(800)289-7660</a>.</p><br />
-
-  <!-- STEP 1: Put the full URL to formmail.php on your website in the 'action' value. -->
-
-<form method="post" action="#" name="SampleForm">
-
+<div class="placeholder">
+<form method="post" action="http://www.your-host-name/formmail.php" name="SampleForm">
     <input type="hidden" name="env_report" value="REMOTE_HOST,REMOTE_ADDR,HTTP_USER_AGENT,AUTH_TYPE,REMOTE_USER" />
 
     <!-- STEP 2: Put your email address in the 'recipients' value.
-
                  Note that you also have to allow this email address in the
-
                  $TARGET_EMAIL setting within formmail.php!
-
     -->
+    <input type="hidden" name="recipients" value="you@your-host-name" />
 
-    <input type="hidden" name="recipients" value="#" />
-
-    <!-- STEP 3: Specify required fields in the 'required' value -->
-
-    <input type="hidden" name="required" value="realname:Your name,email:Email address" />
+    <!-- STEP 3: Specify required fields in the 'required' value - or leave unchanged.
+            NOTE: DO NOT put your email address and name here.
+            "Your email address" and "Your name" are error messages for your users to see,
+            not placeholders for you to replace.
+    -->
+    <input type="hidden" name="required" value="EmailAddr:Your email address,FullName:Your name" />
 
     <!-- STEP 4: Put your subject line in the 'subject' value. -->
+    <input type="hidden" name="subject" value="Sample FormMail Testing" />
 
-    <input type="hidden" name="subject" value="NEODOLCESALON.com Appointment Request" />
+    <!-- ALL DONE! Visit our site for HOW TO guides and more complex features. -->
 
-    <table width="500" border="0" cellspacing="2%" align="left">
+    <!-- this derives (creates) "email" and "realname" special fields from the input fields -->
+    <input type="hidden" name="derive_fields" value="email=EmailAddr,realname=FullName" />
 
-      <tr>
+    <!-- this excludes the "email" and "realname" special fields from the body of the email you receive -->
+    <input type="hidden" name="mail_options" value="Exclude=email;realname" />
 
-        <td><p>Please enter your name:<span class="style1" style="color: #F00">*</span></p></td>
-
-        <td><input type="text" name="realname" onFocus="this.style.background='#FFFBCF'" onBlur="this.style.background='#FFFFFF'" />
-
+    <table border="1" cellspacing="5%">
+    <tr>
+        <td>
+        <p>Please enter your name:</p>
         </td>
-
-      </tr>
-
-      <tr>
-
-        <td><p>Please enter your email address:<span class="style1" style="color: #F00">*</span></p></td>
-
-        <td><input type="text" name="email" onFocus="this.style.background='#FFFBCF'" onBlur="this.style.background='#FFFFFF'" />
-
+        <td><input type="text" name="FullName" />
         </td>
-
-      </tr>
-
-      <tr>
-
-        <td><p>Phone and Ext.# </p>
-
-        </td>
-
-        <td><input name="area_code" id="area_code" style="width:30px;" class="phone" onFocus="this.style.background='#FFFBCF'" onBlur="this.style.background='#FFFFFF'" value="" size="5" maxlength="3" />-<input name="phone_prefix" id="phone_prefix" style="width:30px;" class="phone" onFocus="this.style.background='#FFFBCF'" onBlur="this.style.background='#FFFFFF'" value="" size="5" maxlength="3" />-<input name="phone_suffix" id="phone_suffix" style="width:36px;" class="phone" onFocus="this.style.background='#FFFBCF'" onBlur="this.style.background='#FFFFFF'" value="" size="5" maxlength="4" /></td>
-
     </tr>
-
- 
-
-      <tr>
-
-        <td valign="top"><p>Please enter your message:</p></td>
-
-        <td><textarea name="mesg" rows="10" cols="30"></textarea>
-
+    <tr>
+        <td>
+        <p>Please enter your email address:</p>
         </td>
-
-      </tr>
-
-      <tr>
-
-        <td>&nbsp;</td>
-
-        <td><input name="submit" type="submit" value="Submit" /></td>
-
-      </tr>
-
+        <td><input type="text" name="EmailAddr" />
+        </td>
+    </tr>
+    <tr>
+        <td><p>May we contact you?</p>
+        </td>
+        <td>
+            Yes <input type="radio" name="contact" value="Y" checked="checked" />
+            No <input type="radio" name="contact" value="N" />
+         </td>
+    </tr>
+   
+    <tr>
+        <td valign="top"><p>Which Stylist would you like to book?</p>
+        </td>
+        <td valign="top">
+            <p>
+            <select name="vehicles[]" multiple="multiple" size="5">
+                <option value="Car">Shawn</option>
+                <option value="Bus">David</option>
+                <option value="Truck">Gentry</option>
+                <option value="Plane">Kriss</option>
+                <option value="Boat">Samantha</option>
+            </select>&nbsp;(Select all that apply; use CTRL-click to select)
+            </p>
+         </td>
+    </tr>
+    <tr>
+        <td valign="top">
+        <p>Please enter your message:</p>
+        </td>
+        <td><textarea name="mesg" rows="10" cols="50"></textarea>
+        </td>
+    </tr>
+    <tr>
+        <td><input type="submit" value="Submit" /></td>
+        <td style="text-align:right;"><span style="font-size:60%;">Powered by Tectite <a href="http://www.tectite.com/" target="_blank">php form</a> (FormMail).</span>
+        </td>
+    </tr>
     </table>
-
-    <input type="hidden" name="mail_options" value="KeepLines,HTMLTemplate=plain.html,TemplateMissing=N/A" /> 
-
-<input type="hidden" name="good_template" value="thankyou.htm" />
-
 </form>
-
 </div>
-</section>
 
 <div class="divider"><span></span></div>
 <nav class="bottom">

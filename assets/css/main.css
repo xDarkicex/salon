@@ -520,9 +520,39 @@ cite a:hover {
 }
 
 .Bookonline{
-    margin-top: -290px;
+    margin-top: 60px;
 }
 
+.bookonline .title{
+max-width: 1750px;
+max-height: 120px;
+padding-left: 40px;
+margin-left: 90px;
+
+}
+
+.placeholder{
+    margin-top: 60px;
+}
+
+.bookonline table{
+    display: table;
+}
+tbody{
+    vertical-align: middle;
+    display: table-row-group;
+}
+.bookonline p{
+    max-width: 980px;
+    padding-bottom: 25px;
+}
+.bookonline tr td{
+    max-width: 600px;
+}
+.bookonline tr td p{
+    width:680px;
+    margin-right: 0px;
+}
 .book-item {
     display: -webkit-flex;
     display: -ms-flexbox;
