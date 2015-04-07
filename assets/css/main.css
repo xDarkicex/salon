@@ -602,21 +602,11 @@ MEDIA QUERIES
 
 /*GREATER THAN 600px*/
 @media all and (min-width: 600px) {
-    /*adds image of radon entering house*/
-    article img {
-        display: block;
-    }
+    
+    
+    
 
-    /*puts numbered list and image on each side of container*/
-    div aside {
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-justify-content: space-around;
-            -ms-flex-pack: distribute;
-                justify-content: space-around;
-    }
-
+   
     .divider span {
         width: 450px;
     }
