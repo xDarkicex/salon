@@ -5,6 +5,7 @@ Body
 */
 *{
 	-webkit-font-smoothing: antialiased;
+	text-shadow: 0 0 1px rgba(###,###,###,.5)
 }
 
 /*
