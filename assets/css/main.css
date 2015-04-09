@@ -3,7 +3,7 @@
 Body
 ================
 */
-body{
+*{
 	-webkit-font-smoothing: antialiased;
 }
 
