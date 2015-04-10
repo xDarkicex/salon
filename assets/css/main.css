@@ -23,6 +23,7 @@ HEADER
 }
 .logo{
 	padding-top:5px;
+    padding-left: 45px;
 	display: inline-block;
 	/*width: 16%;
     margin: 0 auto;*/
@@ -112,6 +113,7 @@ MEDIA QUERIES
 		display: none;
 	}
 
+
 	}
 
 
@@ -120,12 +122,16 @@ MEDIA QUERIES
 @media all and (min-width: 768px) {
  .main-image {
         width: 100%;
-        height: 600px;
-        background: url("../images/salon.jpg") center 30% no-repeat;
+        height: 520px;
+        background: url("../images/wholesalon-1.jpg") center 30% no-repeat;
         background-size: cover;
-        background-position: 50% 50%;
+        background-position: 50% 35%;
   background-repeat: no-repeat;
   background-attachment: fixed;
+    }
+    .nil{
+        width: 100%;
+        height: 160px;
     }
  .header {
         height: 9em;
@@ -134,6 +140,7 @@ MEDIA QUERIES
    
     .productsimg div{
         display: inline-block;
+        padding-bottom: 90px;
     }
     .img{
         display: inline;
@@ -209,9 +216,16 @@ MEDIA QUERIES
 		display: inline-block;
 		background-color: #d0d0d0;
         height: 1px;
-        width: 440px;
+        width: 300px;
         margin-bottom: 4px;
 	}
+
+    ul li strong{
+        font-weight: bold;
+    }
+    .hours li{
+        font-size: 2em;
+    }
 
 	/*
 	==========
@@ -238,6 +252,16 @@ MEDIA QUERIES
     	text-transform: uppercase;
     	padding-bottom: 25px;
 	}
+    .maptitle{
+        font-size: 2.0em;
+         color: #000;
+        font-family: 'Raleway', sans-serif;
+        text-transform: uppercase;
+        padding-bottom: 5px;
+        padding-top: 15px;
+ 
+    }
+    }
 	.section p{
 		font-family: 'Raleway', sans-serif;
 		font-size: 1.5em;
@@ -260,6 +284,16 @@ MEDIA QUERIES
 	.book .book-item .phone a:hover{
 		color:#5E7F58;
 	}
+
+        
+    }
+    iframe{
+        padding-top: 5px;
+        width:350px;
+        height:350px;
+        overflow: hidden;
+    }
+
 	/*
 	=========
 	Bottom
@@ -293,6 +327,13 @@ MEDIA QUERIES
 	}
 }
 
+
+@media all and (max-width: 1368px){
+    .line span{
+        width:300px;
+    }
+}
+
 @media all and (max-width: 1208px) {
 	.line span{
 		width:220px;
@@ -303,6 +344,7 @@ MEDIA QUERIES
 	.line span {
 		width:100px;
 	}
+    
 }
 /*GREATER THAN 800px*/
 @media all and (min-width: 800px) {
