@@ -151,6 +151,15 @@ MEDIA QUERIES
         margin:15px;
         
     }
+    .mapoutter{
+        width:100%;
+        text-align: center;
+    }
+.map{
+    display: inline-block;
+    width:600px;
+    height:600px;
+}
 
     .divider{
     padding-left: 20px;
@@ -321,6 +330,13 @@ MEDIA QUERIES
 	}
 }
 
+@media all and(max-width: 700px){
+.map{
+    width:320px;
+    height: 400px;
+}
+}
+
 @media all and (max-width: 1460px) {
 	.line span{
 		width: 320px;
@@ -346,13 +362,4 @@ MEDIA QUERIES
 	}
     
 }
-/*GREATER THAN 800px*/
-@media all and (min-width: 800px) {
-	.nav ul a{
-		
-		font-size: 13px;
-	}
-	
-	
 
-}
