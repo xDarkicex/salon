@@ -130,6 +130,37 @@ MEDIA QUERIES
  .header {
         height: 9em;
     }
+
+   
+    .productsimg div{
+        display: inline-block;
+    }
+    .img{
+        display: inline;
+        width:210px;
+        height:210px;
+        border-radius: 25px;
+        border:3px solid rgba(0,0,0,.4);
+        margin:15px;
+        
+    }
+
+    .divider{
+    padding-left: 20px;
+    padding-right:20px;
+    padding-bottom:25px;
+    width:100%;
+    text-align: center;
+
+    }
+
+    .divider span {
+    display: inline-block;
+    background-color: #d0d0d0;
+    height: 1px;
+    width: 85%;
+}
+
 	
 	.nav{
 	margin-top: 15px;
