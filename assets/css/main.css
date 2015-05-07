@@ -112,24 +112,24 @@ MEDIA QUERIES
 /*GREATER THAN 768px*/
 @media (max-width: 2000px) {
  .main-image {
-        width: 100%;
-        height: 520px;
-        background: url("../images/wholesalon-1.jpg") center 30% no-repeat;
-        background-size: cover;
-        background-position: 50% 35%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+    width: 100%;
+    height: 520px;
+    background: url("../images/wholesalon-1.jpg") center 30% no-repeat;
+    background-size: cover;
+    background-position: 50% 35%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     }
  .header {
         height: 9em;
     }
 
    
-    .productsimg div{
+.productsimg div{
         display: inline-block;
         padding-bottom: 90px;
     }
-    .img{
+.img{
         display: inline;
         width:210px;
         height:210px;
@@ -146,7 +146,7 @@ MEDIA QUERIES
     height:65vh;
 }
 
-    .divider{
+.divider{
     padding-left: 20px;
     padding-right:20px;
     padding-bottom:25px;
@@ -155,7 +155,7 @@ MEDIA QUERIES
 
     }
 
-    .divider span {
+.divider span {
     display: inline-block;
     background-color: #d0d0d0;
     height: 1px;
@@ -163,10 +163,10 @@ MEDIA QUERIES
 }
 
 	
-	.nav{
-	margin-top: -10px;
-	    width: 100%;
-  text-align: center;
+.nav{
+	margin-top: -14px;
+	width: 100%;
+    text-align: center;
 	}
 
 	.nav ul{
@@ -193,6 +193,8 @@ MEDIA QUERIES
         color: #484848;
         text-decoration: none;
         text-transform: uppercase;
+        transition: background-color .2s ease-in-out;
+        transition-delay: initial;
 	}
 
 	.nav li a:hover {
@@ -327,7 +329,7 @@ svg{
     width: 8em;
     }
 .nav{
-    margin-top: -17px;
+    margin-top: -16px;
 }
 .nav ul li{
     padding-top: 0px;
