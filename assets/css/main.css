@@ -320,3 +320,42 @@ MEDIA QUERIES
 	}
 }
 
+@media (max-width: 1200px){
+
+    /*
+    ================
+    Top-Header 
+    ================
+    */
+
+    .header{
+        height: 6em;
+
+    }
+
+    .logo{
+        height: 2em;
+        width: 2em;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    /*
+    ==============
+    Bottom
+    ==============
+    */
+
+    .bottom .line{
+        width:95px;
+    }
+}
