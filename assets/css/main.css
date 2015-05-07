@@ -340,6 +340,28 @@ svg{
     margin-left: 0px;
 }
 
+.section p{
+
+    font-size: 0.8em;
+    line-height: 10px;
+}
+
+.section{
+    padding-top: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 40px;
+    }
+.section .article{
+    max-width: 1200px;
+    margin: 0 auto;
+    }
+.section .title{
+        font-size: 1.8em;
+        padding-top: 1.0em;
+        padding-bottom: 15px;
+    }
+
 .bottom .line{
     width:95px;
     }
