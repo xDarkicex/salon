@@ -398,6 +398,9 @@ svg{
     padding-left: 1em;
     width: 90%;
 }
+.bottum ul li{
+    padding-left: 6px;
+}
 
    .bottom .line{
         width: 100%;
