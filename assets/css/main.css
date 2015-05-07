@@ -340,29 +340,76 @@ svg{
     margin-left: 0px;
 }
 
+.main-image{
+    height: 400px;
+}
+
 .section p{
 
-    font-size: 0.8em;
-    line-height: 10px;
+    font-size: 1.4em;
+    line-height: 35px;
+}
+.productsimg div {
+  display: inline-block;
+  padding-bottom: 0px;
+  width: 100px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.img{
+    width: 100px;
+    height: 100px;
+    margin: 5px;
 }
 
 .section{
     padding-top: 15px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 0px;
     }
 .section .article{
     max-width: 1200px;
     margin: 0 auto;
     }
 .section .title{
-        font-size: 1.8em;
+        font-size: 1.6em;
         padding-top: 1.0em;
         padding-bottom: 15px;
     }
 
-.bottom .line{
-    width:95px;
+.section .subtitle {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.1em;
+  font-weight: 700;
+  padding-bottom: 25px;
+  padding-top: 5px;
+}
+
+.hours li {
+  font-size: 1.2em;
+}
+
+.divider{
+    padding-left: 0px;
+}
+.bottom{
+    padding-left: 1em;
+    width: 90%;
+}
+
+   .bottom .line{
+        width: 100%;
+
+    }
+
+   .bottom .line span{
+        z-index: 1;
+        display: inline-block;
+        background-color: #d0d0d0;
+        height: 1px;
+        width: 100%;
+        margin-bottom: 4px;
     }
 }
