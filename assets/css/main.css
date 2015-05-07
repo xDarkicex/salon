@@ -472,4 +472,8 @@ svg{
         width: 100%;
         margin-bottom: 4px;
     }
+
+    .slideshow{
+        width: 340px;
+    }
 }
