@@ -477,3 +477,8 @@ svg{
         width: 340px;
     }
 }
+@media screen and (max-width: 460px){
+	.section p{
+		font-size: 1em;
+	}
+}
